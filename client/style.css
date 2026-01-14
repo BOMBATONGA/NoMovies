@@ -7,7 +7,7 @@ body{
     white-space: nowrap;
 }
 
-button{
+button, legend, label{
     font-family: "Inknut Antiqua", serif;
     font-weight: 600;
     font-style: normal;
