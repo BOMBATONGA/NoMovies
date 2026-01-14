@@ -1,0 +1,19 @@
+body{
+    background-color: #3C312F;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #EADEAF;
+}
+
+h2{
+    font-size: 24px;
+}
+
+p{
+    font-size: 16px;
+}
+
+footer{
+    color: #A27035;
+}
