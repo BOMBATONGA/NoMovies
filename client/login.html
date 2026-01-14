@@ -8,13 +8,41 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <style>
-    h1 {
-        font: Arial;
+
+    body{
+        display: flex;
+        flex-direction: column;
     }
+
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #confirm{
+        align-self: flex-end;
+    }
+
 
 
   </style>
   <body>
-    <h1>Hello World</h1>
+    <h1>Login</h1>
+    <form id="input">
+        <legend>Please enter your username and password</legend>
+
+        <label for="email">email</label>
+        <input type="text" id="email" name="email" type="email">
+
+        <label for="password">password</label>
+        <input type="password" id="password" name="password">
+        
+    </form>   <br> 
+
+    <button id="confirm" type="submit" form="input">
+        confirm
+    </button>
+
   </body>
 </html>
