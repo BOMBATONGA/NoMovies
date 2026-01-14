@@ -1,9 +1,22 @@
 body{
-    background-color: #3C312F;
+    background-color: #222222;
     font-family: "Inknut Antiqua", serif;
     font-weight: 300;
     font-style: normal;
-    color: #EADEAF;
+    color: #EEEEEE;
+    white-space: nowrap;
+}
+
+button{
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 300;
+    font-style: normal;
+    border: 0px;
+    font-size: 16px;
+}
+button:hover{
+    background-color: #0E7EE6;
+    color: #EEEEEE;
 }
 
 h2{
@@ -12,8 +25,4 @@ h2{
 
 p{
     font-size: 16px;
-}
-
-footer{
-    color: #A27035;
 }
