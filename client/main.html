@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <meta charset="UTF-8"/>
+        <title>NoMovies</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="\client\style.css">
+        <style>
+            body{
+                display: grid;
+                grid-template-columns: 1fr 9fr;
+                height: 100vh;
+                width: 100vw;
+            }
+            #left-bar{
+                background-color: #2F2F2F;
+                grid-column: 1, 2;
+                padding: 12px;
+                padding-top: 32px;
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                border-top-right-radius: 24px;
+            }
+            #main_space{
+                grid-column: 2, 3;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 2vh;
+            }
+            #left-bar button{
+                background-color:#222222;
+                border-radius: 12px;
+                font-weight: 200;
+                color: #8F8F8F;
+                font-size: 14px;
+                width: 20vh;
+            }
+            #filters button #sorts button{
+                width: 20vh;
+            }
+            #search-user{
+                width: 100%;
+                display:flex;
+                justify-content: space-between;
+            }
+            #search-bar{
+                border-radius: 20px;
+                border: 0px;
+                width: 80%;
+                background-color: #EEEEEE;
+                height: 80%;
+                align-self: center;
+                font-size: 16px;
+                padding: 8px;
+                transition: border 0.2s ease;
+                outline: none;
+            }
+            #search-bar:focus{
+                border: 2px solid #0E7EE6;
+            }
+            #user{
+                border-radius:100px;
+                width: 10vh;
+                height: 10vh;
+                background-color: #0E7EE6;
+                margin-right: 2vw;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="left-bar">
+            <a href="main.html">
+                <button>Home</button>
+            </a>
+            <a href="main.html">
+                <button>Library</button>
+            </a>
+            <a href="main.html">
+                <button>Create</button>
+            </a>
+        </div>
+
+        <div id="main_space">
+            <div id="search-user">
+                <input id="search-bar">
+                <div id="user"></div>
+            </div>
+
+            <div id="filters">
+                <button>List</button>
+                <button>Actor</button>
+                <button>Movie</button>
+            </div>
+            <div id="sorts">
+                <button>List</button>
+                <button>Actor</button>
+                <button>Movie</button>
+            </div>
+        </div>
+
+    </body>
+</html>
